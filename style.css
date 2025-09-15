@@ -1,0 +1,337 @@
+/* Basic Reset & Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #2e3034; /* Dark grey background */
+}
+
+.container {
+    max-width: 1000px; /* Slightly adjusted max-width based on visual estimation */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.header-section {
+    background-color: #2e3034; /* Dark grey */
+    text-align: center;
+    padding: 60px 20px; /* Increased padding */
+}
+
+.header-section .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adjusted gap */
+}
+
+.header-section .logo h1 {
+    margin: 0;
+    font-size: 4em;
+    color: #fff;
+    font-weight: bold; /* Ensure EVA is bold */
+}
+
+.header-section .logo img {
+    width: 60px; /* Larger logo icon */
+    height: auto;
+}
+
+.header-section .tagline {
+    margin-top: 15px; /* Adjusted margin */
+    font-size: 1.4em; /* Larger tagline font size */
+    color: #ccc;
+}
+
+/* About Section */
+.about-section {
+    background-color: #4a5a52; /* Greenish-dark */
+    padding: 80px 0; /* Adjusted padding */
+}
+
+.about-section .about-content {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* Increased gap */
+}
+
+.about-section .about-image {
+    flex: 1;
+}
+
+.about-section .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-section .about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about-section .about-text p {
+    font-size: 1.15em; /* Slightly adjusted font size */
+    line-height: 1.7;
+    color: #e0e0e0; /* Lighter grey for text */
+}
+
+/* Features/Offerings Section */
+.features-section {
+    background-color: #4a5a52; /* Greenish-dark */
+    padding: 80px 0; /* Adjusted padding */
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.8em; /* Slightly smaller heading */
+    margin-bottom: 45px;
+    color: #fff;
+}
+
+.features-section .features-main-content {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* Increased gap */
+    margin-bottom: 80px; /* Increased margin */
+}
+
+.features-section .features-text {
+    flex: 1;
+    text-align: left;
+}
+
+.features-section .features-text p {
+    font-size: 1.15em; /* Slightly adjusted font size */
+    line-height: 1.7;
+    color: #e0e0e0; /* Lighter grey for text */
+}
+
+.features-section .features-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-section .features-image img {
+    max-width: 90%; /* Adjusted max-width for family image */
+    height: auto;
+    border-radius: 8px;
+}
+
+.features-section .features-icons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.features-section .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.features-section .feature-item img {
+    width: 60px; /* Re-adjusted size */
+    height: 60px; /* Fixed height for consistent circle */
+    margin-bottom: 0;
+    background-color: #e74c3c; /* Red background for icon */
+    border-radius: 50%;
+    padding: 12px; /* Adjusted padding */
+    object-fit: contain; /* Ensure icon fits within the circle */
+}
+
+.features-section .feature-item p {
+    font-size: 0.95em; /* Smaller font size for feature text */
+    color: #fff;
+}
+
+/* Team Section */
+.team-section {
+    background-color: #2e3034; /* Dark grey */
+    padding: 80px 0; /* Adjusted padding */
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.8em; /* Slightly smaller heading */
+    margin-bottom: 45px;
+    color: #fff;
+}
+
+.team-section .team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* Adjusted gap */
+}
+
+.team-section .team-member {
+    text-align: center;
+}
+
+.team-section .team-member img {
+    width: 130px; /* Slightly smaller image size */
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px; /* Adjusted margin */
+    border: 3px solid #6cb644; /* Slightly thinner green border */
+}
+
+.team-section .team-member h3 {
+    margin: 10px 0 6px; /* Adjusted margin */
+    color: #fff;
+    font-size: 1.2em; /* Slightly smaller font size */
+}
+
+.team-section .team-member p {
+    color: #bbb; /* Slightly lighter grey for roles */
+    font-size: 0.9em;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #2e3034; /* Dark grey */
+    text-align: center;
+    padding: 60px 20px; /* Increased padding */
+    border-top: 1px solid #3a3d42;
+}
+
+.footer-section .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adjusted gap */
+}
+
+.footer-section .logo h1 {
+    margin: 0;
+    font-size: 4em;
+    color: #fff;
+    font-weight: bold; /* Ensure EVA is bold */
+}
+
+.footer-section .logo img {
+    width: 60px; /* Larger logo icon */
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-section .logo h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    .header-section .logo img {
+        width: 40px;
+    }
+
+    .header-section .tagline {
+        font-size: 1em;
+    }
+
+    .about-section .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section .about-image,
+    .about-section .about-text {
+        flex: none;
+        width: 100%;
+    }
+
+    .features-section h2 {
+        font-size: 2em;
+    }
+
+    .features-section .features-main-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-section .features-text,
+    .features-section .features-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .features-section .features-icons {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .team-section h2 {
+        font-size: 2em;
+    }
+
+    .team-section .team-members {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+
+    .team-section .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer-section .logo h1 {
+        font-size: 2.5em;
+    }
+
+    .footer-section .logo img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-section .logo h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .header-section .logo img {
+        width: 35px;
+    }
+
+    .header-section .tagline {
+        font-size: 0.9em;
+    }
+
+    .about-section,
+    .features-section,
+    .team-section,
+    .footer-section {
+        padding: 30px 0;
+    }
+
+    .team-section .team-members {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+
+    .team-section .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .features-section .feature-item img {
+        width: 50px;
+    }
+
+    .features-section h2,
+    .team-section h2 {
+        font-size: 1.8em;
+    }
+
+    .footer-section .logo h1 {
+        font-size: 2em;
+    }
+
+    .footer-section .logo img {
+        width: 35px;
+    }
+}
